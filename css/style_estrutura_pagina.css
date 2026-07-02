@@ -1,0 +1,48 @@
+/*IMPORTANDO A FONTE DAS LETRAS DO google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*DEFINIR AS CONFIGURAÇÕES EM TODOS ELEMENTOS DA PÁGINA*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+/*CRIANDO VARIÁVEIS*/
+:root{
+    --cor01: #d18b8b;
+    --cor02: #5c2323;
+    --cor3: #0bbd87;
+    --cor4: #ffffff;
+}
+
+/*FORMATANDO A TAG MAIN PELO ID geral*/
+#geral{
+    margin: 20px;
+}
+
+/*FORMATANDO O CABEÇALHO*/
+#cabecalho{
+    background-color: #0bbd87;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 60px;
+
+}
+
+/*CONFIGURAR MENU NA HORIZONTAL*/
+#menu ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+    #menu ul img{
+        width: 25px;
+        height: 25px;
+    }
+
+    
