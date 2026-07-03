@@ -11,7 +11,7 @@
 
 /*CRIANDO VARIÁVEIS*/
 :root {
-    --cor01: #d18b8b;
+    --cor01: #5f42a3;
     --cor02: #5c2323;
     --cor3: #0bbd87;
     --cor4: #ffffff;
@@ -20,11 +20,16 @@
 /*FORMATANDO A TAG MAIN PELO ID geral*/
 #geral {
     margin: 20px;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
 }
 
 /*FORMATANDO O CABEÇALHO*/
 #cabecalho {
-    background-color: #0bbd87;
+    background-color: #0eb180;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,6 +52,7 @@
 
 /*FORMATANDO SECTION pesquisa*/
 #pesquisa {
+    width: 100%;
     height: 200px;
     background-color: var(--cor01);
     display: flex;
@@ -73,6 +79,8 @@
     grid-template-columns: repeat(auto-fi, minmax(250px, 1fr));
     gap: 20px;
     margin: 20px 0px;
+    width: 1000px;
+    min-height: 800px;
 }
 
 .card{
@@ -84,7 +92,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--cor01);
+    border: 1px solid var(--cor02);
+}
+.card:hover{
+    transform: translateY(-5px);
 }
 
 .card img{
@@ -100,6 +111,68 @@
 }
 
 .card h2{
-    color: var(--cor4);
+    color: var(--cor3);
 }
 
+.card button{
+    width: 200px;
+    height: 30px;
+    margin: 25px;
+    border: none;
+    background-color: var(--cor3);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--cor02);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/*FORMATAR O RODAPÉ*/
+
+#rodape{
+    width: 100%;
+    height: 250px;
+    background-color: var(--cor3);
+    margin: 20px 0px;
+    padding: 10px;
+    color: var(--cor01);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*FORMATANDO LINKS*/
+#menu a:link{
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+#menu a:visited{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+#menu a:hover{
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: var(--cor01);
+}
+
+#menu a:active{
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: var(--cor01);
+}
