@@ -29,6 +29,7 @@
 
 /*FORMATANDO O CABEÇALHO*/
 #cabecalho {
+    width: 100%;
     background-color: #0eb180;
     display: flex;
     justify-content: space-between;
@@ -146,11 +147,11 @@
 
 /*FORMATANDO LINKS*/
 #menu a:link{
-    font-size: 2em;
+    font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 5px;
     text-decoration: none;
-    color: var(--cor3);
+    color: var(--cor01);
 }
 
 #menu a:visited{
