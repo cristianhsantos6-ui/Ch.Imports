@@ -64,7 +64,7 @@
 #pesquisa input::placeholder {
     font-size: 1.3em;
     font-style: italic;
-    color: var(--cor02);
+    color: var(--cor03);
 }
 
 /*FORMATANDO OS CARDS*/
@@ -84,7 +84,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--cor3);
+    border: 1px solid var(--cor01);
 }
 
 .card img{
