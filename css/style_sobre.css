@@ -16,11 +16,11 @@
 ===================================================== */
 
 :root{
-    --cor01:#f6f3fc;
-    --cor02:#5c2323;
-    --cor03:#2bacac;
-    --cor04:#ffffff;
-    --cor05:#f8f8f8;
+    --cor01:#6b22ff;
+    --cor02:#000000;
+    --cor03:#411aec;
+    --cor04:#f8f8f8;
+    --cor05:#e2d2d2;
 }
 
 /* =====================================================
@@ -87,7 +87,7 @@
 }
 
 #banner-sobre h1{
-    color:#fff;
+    color:#e7d5d5;
     font-size:3em;
     text-transform:uppercase;
 }
@@ -154,7 +154,7 @@
 
 .card p{
     text-align:center;
-    color:#555;
+    color:#cfc6c6;
 }
 
 /* =====================================================
@@ -208,7 +208,7 @@
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    color:var(--cor01);
+    color:var(--cor04);
 }
 
 #rodape h2{
