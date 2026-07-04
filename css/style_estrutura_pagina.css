@@ -11,9 +11,9 @@
 
 /*CRIANDO VARIÁVEIS*/
 :root {
-    --cor01: #5f42a3;
+    --cor01: #4500e6;
     --cor02: #5c2323;
-    --cor3: #387965;
+    --cor3: #2f25bb;
     --cor4: #ffffff;
 }
 
@@ -30,7 +30,7 @@
 /*FORMATANDO O CABEÇALHO*/
 #cabecalho {
     width: 100%;
-    background-color: #0eb180;
+    background-color: #e7e7e7;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,7 +120,7 @@
     height: 30px;
     margin: 25px;
     border: none;
-    background-color: var(--cor3);
+    background-color: var(--cor01);
     text-transform: uppercase;
     letter-spacing: 5px;
     color: var(--cor02);
@@ -135,7 +135,7 @@
 #rodape{
     width: 100%;
     height: 250px;
-    background-color: var(--cor3);
+    background-color: var(--cor1);
     margin: 20px 0px;
     padding: 10px;
     color: var(--cor01);
