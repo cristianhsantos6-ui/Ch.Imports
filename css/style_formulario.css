@@ -11,7 +11,7 @@
 
 /* VARIÁVEIS */
 :root{
-    --cor01:#4008c2;
+    --cor01:#460bcf;
     --cor02:#5c2323;
     --cor03:#e4e1e1;
     --cor04:#fffefe;
@@ -90,7 +90,7 @@
     border:1px solid #ddd;
     border-radius:10px;
     padding:30px;
-    box-shadow:0 5px 10px rgba(0,0,0,.15);
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 #form h3{
