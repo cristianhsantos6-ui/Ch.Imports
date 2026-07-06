@@ -11,11 +11,11 @@
 
 :root{
 
-    --cor01:#7422f8;
-    --cor02:#530ed3;
-    --cor03:#BB9457;
-    --cor04:#FFE6A7;
-    --cor05:#FFFFFF;
+    --cor01:#2e0680;
+    --cor02:#5119b8;
+    --cor03:#020005;
+    --cor04:#dfdce2;
+    --cor05:#fbfbfc;
 
 }
 
@@ -86,6 +86,12 @@ body{
 
 }
 
+#menu-img{
+    width: 25px;
+     height: 25px;
+
+}
+
 /* LOGIN */
 
 #login{
@@ -98,37 +104,27 @@ body{
 
 }
 
+
+
 /* CAIXA */
 
-.caixa-login{
+.caixalogin{
 
     width:400px;
-
-    background:white;
 
     padding:40px;
 
     border-radius:15px;
 
-    box-shadow:0 0 25px rgba(0,0,0,.3);
+    box-shadow:0 0 25px rgba(0, 0, 0, 0.3);
 
 }
-
-.caixa-login h1{
-
-    text-align:center;
-    color:var(--cor01);
-
-    margin-bottom:10px;
-
-}
-
 .caixa-login p{
 
     text-align:center;
     margin-bottom:25px;
 
-    color:#666;
+    color:#ffffff;
 
 }
 

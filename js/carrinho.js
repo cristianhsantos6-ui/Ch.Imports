@@ -5,10 +5,8 @@ let carrinho = [];
 const subtotal = document.getElementById("subtotal");
 const total = document.getElementById("total");
 
-// ==========================
-// ADICIONAR PRODUTO
-// ==========================
-
+// // ADICIONAR PRODUTO
+// 
 const botoesAdicionar = document.querySelectorAll(".adicionar");
 
 botoesAdicionar.forEach(botao => {
@@ -46,9 +44,8 @@ botoesAdicionar.forEach(botao => {
 
 });
 
-// ==========================
-// REMOVER PRODUTO
-// ==========================
+// // REMOVER PRODUTO
+//
 
 const botoesRemover = document.querySelectorAll(".remover");
 
@@ -68,9 +65,9 @@ botoesRemover.forEach(botao => {
 
 });
 
-// ==========================
+// 
 // ATUALIZA RESUMO
-// ==========================
+// 
 
 function atualizarResumo() {
 
@@ -90,10 +87,9 @@ function atualizarResumo() {
 
 }
 
-// ==========================
+// 
 // FINALIZAR COMPRA
-// ==========================
-
+// 
 document.getElementById("finalizar").addEventListener("click", () => {
 
     if (carrinho.length === 0) {
