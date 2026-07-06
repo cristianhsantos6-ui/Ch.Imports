@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Ch.Imports</title>
+
+    <link rel="stylesheet" href="../css/style_estrutura_pagina.css">
+    <link rel="stylesheet" href="../css/style_carrinho.css">
+</head>
+
+<body>
+
+<main id="geral">
+
+    <!-- Cabeçalho -->
+    <header id="cabecalho">
+
+        <div id="logo">
+            <a href="../index.html">Ch.Imports</a>
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="carrinho.html">🛒 Carrinho</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section id="carrinho">
+
+        <h1>Meu Carrinho</h1>
+
+        <!-- Produto 1 -->
+
+        <div class="produto" data-preco="175">
+
+            <img src="../imagens/ch_imports_camisas.png" alt="Camisas">
+
+            <div class="informacoes">
+
+                <h2>Camisas</h2>
+
+                <p>Preço: <strong>R$ 175,00</strong></p>
+
+                <label>Quantidade</label>
+
+                <input type="number" min="1" value="1">
+
+                <br><br>
+
+                <button class="adicionar">Adicionar</button>
+
+                <button class="remover">Remover</button>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Produto 2 -->
+
+        <div class="produto" data-preco="275.90">
+
+            <img src="../imagens/ch_imports_tenis.png" alt="Tênis">
+
+            <div class="informacoes">
+
+                <h2>Tênis Nike</h2>
+
+                <p>Preço: <strong>R$ 275,90</strong></p>
+
+                <label>Quantidade</label>
+
+                <input type="number" min="1" value="1">
+
+                <br><br>
+
+                <button class="adicionar">Adicionar</button>
+
+                <button class="remover">Remover</button>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Produto 3 -->
+
+        <div class="produto" data-preco="149.90">
+
+            <img src="../imagens/imagem_06_estilo_boho.png" alt="Vestido">
+
+            <div class="informacoes">
+
+                <h2>Vestido</h2>
+
+                <p>Preço: <strong>R$ 149,90</strong></p>
+
+                <label>Quantidade</label>
+
+                <input type="number" min="1" value="1">
+
+                <br><br>
+
+                <button class="adicionar">Adicionar</button>
+
+                <button class="remover">Remover</button>
+
+            </div>
+
+        </div>
+
+        <!-- Resumo -->
+
+        <aside id="resumo">
+
+            <h2>Resumo do Pedido</h2>
+
+            <p>
+                <span>Subtotal</span>
+                <strong id="subtotal">R$ 0,00</strong>
+            </p>
+
+            <p>
+                <span>Frete</span>
+                <strong id="frete">Grátis</strong>
+            </p>
+
+            <h3>
+                <span>Total</span>
+                <strong id="total">R$ 0,00</strong>
+            </h3>
+
+            <button id="finalizar">
+                Finalizar Compra
+            </button>
+
+        </aside>
+
+    </section>
+
+    <footer id="rodape">
+
+        <h2>&copy; 2026 Ch.Imports - Todos os direitos reservados</h2>
+
+        <p>Formas de pagamento: Pix, Cartão de Débito ou Crédito.</p>
+
+    </footer>
+
+</main>
+
+<script src="../js/carrinho.js"></script>
+
+</body>
+</html>
