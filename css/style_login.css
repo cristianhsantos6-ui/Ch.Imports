@@ -1,243 +1,183 @@
-/* RESET */
+/* IMPORTANDO FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+/* CONFIGURAÇÕES GERAIS */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Roboto, sans-serif;
 }
 
 /* VARIÁVEIS */
 
 :root{
-
-    --cor01:#2e0680;
-    --cor02:#5119b8;
-    --cor03:#020005;
-    --cor04:#dfdce2;
-    --cor05:#fbfbfc;
-
+    --cor01:#4500e6;
+    --cor02:#5c2323;
+    --cor03:#2f25bb;
+    --cor04:#ffffff;
 }
 
-body{
-
-    background:linear-gradient(135deg,var(--cor01),var(--cor02));
-    min-height:100vh;
-
-}
-
-/* ESTRUTURA */
+/* MAIN */
 
 #geral{
-
     width:100%;
     min-height:100vh;
     display:flex;
     flex-direction:column;
-
+    align-items:center;
 }
 
 /* CABEÇALHO */
 
 #cabecalho{
-
     width:100%;
-    height:80px;
+    height:60px;
+    background:#e7e7e7;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
 
-    padding:0 50px;
-
-    background:var(--cor01);
-
-}
-
-#logo{
-
-    color:var(--cor05);
-    font-size:32px;
-    font-weight:bold;
-
+    padding:0 20px;
 }
 
 #menu ul{
-
     display:flex;
-    gap:30px;
-
     list-style:none;
+    gap:30px;
+    align-items: center;
+}
 
+#menu ul img{
+    width:25px;
+    height:25px;
 }
 
 #menu a{
-
-    color:white;
     text-decoration:none;
-    font-size:18px;
-    transition:.3s;
-
+    color:var(--cor01);
+    text-transform:uppercase;
+    letter-spacing: 2px;
 }
 
 #menu a:hover{
-
     color:var(--cor03);
-
 }
 
-#menu-img{
-    width: 25px;
-     height: 25px;
-
-}
-
-/* LOGIN */
+/* ÁREA LOGIN */
 
 #login{
 
-    flex:1;
+    width:350px;
+
+    margin:60px auto;
+
+    border:1px solid var(--cor02);
+
+    padding:30px;
 
     display:flex;
-    justify-content:center;
+    flex-direction:column;
     align-items:center;
-
 }
 
+#login h1{
 
-
-/* CAIXA */
-
-.caixalogin{
-
-    width:400px;
-
-    padding:40px;
-
-    border-radius:15px;
-
-    box-shadow:0 0 25px rgba(0, 0, 0, 0.3);
-
-}
-.caixa-login p{
-
-    text-align:center;
     margin-bottom:25px;
 
-    color:#ffffff;
-
-}
-
-.caixa-login label{
-
-    display:block;
-
-    margin-bottom:8px;
-    margin-top:15px;
-
     color:var(--cor01);
-    font-weight:bold;
-
 }
 
-.caixa-login input{
+#login form{
 
     width:100%;
-    padding:13px;
 
-    border:1px solid #ccc;
-
-    border-radius:8px;
-
-    outline:none;
-
-    font-size:16px;
-
+    display:flex;
+    flex-direction:column;
 }
 
-.caixa-login input:focus{
+#login label{
 
-    border:2px solid var(--cor03);
-
+    margin-top:10px;
+    margin-bottom:5px;
 }
 
-/* BOTÃO */
+#login input{
 
-.caixa-login button{
+    height:40px;
 
-    width:100%;
-    margin-top:30px;
+    padding:10px;
 
-    padding:14px;
+    border:1px solid #999;
+
+    border-radius:5px;
+}
+
+#login button{
+
+    margin-top:25px;
+
+    height:40px;
 
     border:none;
 
-    border-radius:8px;
-
-    background:var(--cor02);
+    background:var(--cor01);
 
     color:white;
 
-    font-size:18px;
+    font-size:16px;
 
     cursor:pointer;
-
-    transition:.3s;
-
 }
 
-.caixa-login button:hover{
+#login button:hover{
 
     background:var(--cor03);
-
-    color:black;
-
 }
 
-.cadastro{
+#login p{
 
-    margin-top:25px;
-    text-align:center;
-
+    margin-top:20px;
 }
 
-.cadastro a{
-
-    color:var(--cor02);
+#login a{
 
     text-decoration:none;
-    font-weight:bold;
 
-}
-
-.cadastro a:hover{
-
-    color:var(--cor03);
-
+    color:var(--cor01);
 }
 
 /* RODAPÉ */
 
 #rodape{
 
-    background:var(--cor01);
+    width:100%;
 
-    color:white;
+    height:120px;
 
-    text-align:center;
+    background:#e7e7e7;
 
-    padding:20px;
+    display:flex;
 
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-top:auto;
 }
 
 #rodape h2{
 
     font-size:18px;
 
+    color:var(--cor01);
 }
 
 #rodape p{
 
     margin-top:10px;
-
 }
