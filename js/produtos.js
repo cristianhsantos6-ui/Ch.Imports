@@ -7,44 +7,15 @@ const sectonCards = document.querySelector('#cards')
 //CARREGANDO OS CARDS 
 const listarProdutos = () => {
 
-    sectonCards.innerHTML = ''
-//PERCORRENDO O ARRAY DE PRODUTOS 
-produtos.forEach((elem, i) => {
-    const divCards = document.createElement('div')
-    divCards.setAttribute('class', 'card')
-
-    const imgCard = document.createElement('img')
-    imgCard.setAttribute('src', elem.caminho_imagem)
-    imgCard.setAttribute('alt', elem.descricao_protudo)
-
-    const pCard = document.createElement('p')
-    pCard.innerHTML = elem.descricao_protudo
-
-    const h2Card = document.createElement('h2')
-    h2Card.innerHTML = `R$ ${parseFloat(elem.valor_unitario).toFixed(2).replace('.', ',')}`
-
-    const btnCard = document.createElement('button')
-    btnCard.setAttribute('class', 'btn-add')
-    btnCard.innerHTML = 'Adicionar'
-
-    divCards.appendChild(imgCard)
-    divCards.appendChild(pCard)
-    divCards.appendChild(h2Card)
-    divCards.appendChild(btnCard)
-
-    sectonCards.appendChild(divCards)
-})
+   
 }
-//ADICIONAR O divCards A SECTION CARDS
-
-
 
 //CHAMANDO A FUNÇÃO listarProdutos
 listarProdutos()
 
 //MONTANDO OS MENUS SEÇÕES 
 const menuSecoes = () => {
-    const mapSecoes = new map()
+    const mapSecoes = new Map()
 
     //PERCORRENDO O ARRAY PRODUTOS
     produtos.forEach((elem)=>{
@@ -80,7 +51,7 @@ const carregaSecoes = () =>{
         aMenu.innerHTML = elem.secao
 
          aMenu.addEventListener('click',()=>{
-            filtroProdutos(elem.id_secao)
+            montarCards(filtroProduto(elem.id_secao))
          })
 
         //ADICIONANDO O ELEMENTO FILHO a NO li 
@@ -94,4 +65,41 @@ const carregaSecoes = () =>{
 
 carregaSecoes()
 
-//FUNÇÃO FILTRO
+//FUNÇÃO FILTRO PRODUTO
+const filtroProduto = (idSecao)=>{
+    return produtos.filter(elem => elem.id_secao === idSecao)
+}
+
+//FUNÇÃO montar cards
+const montarCards = (objProdutos) => {
+    //LIMPAR A SECTION cards
+    sectonCards.innerHTML = ''
+
+    sectonCards.innerHTML = ''
+//PERCORRENDO O ARRAY DE PRODUTOS 
+objProdutos.forEach((elem, i) => {
+    const divCards = document.createElement('div')
+    divCards.setAttribute('class', 'card')
+
+    const imgCard = document.createElement('img')
+    imgCard.setAttribute('src', elem.caminho_imagem)
+    imgCard.setAttribute('alt', elem.descricao_protudo)
+
+    const pCard = document.createElement('p')
+    pCard.innerHTML = elem.descricao_protudo
+
+    const h2Card = document.createElement('h2')
+    h2Card.innerHTML = `R$ ${parseFloat(elem.valor_unitario).toFixed(2).replace('.', ',')}`
+
+    const btnCard = document.createElement('button')
+    btnCard.setAttribute('class', 'btn-add')
+    btnCard.innerHTML = 'Adicionar'
+
+    divCards.appendChild(imgCard)
+    divCards.appendChild(pCard)
+    divCards.appendChild(h2Card)
+    divCards.appendChild(btnCard)
+
+    sectonCards.appendChild(divCards) 
+})
+}
