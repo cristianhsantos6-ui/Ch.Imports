@@ -6,7 +6,7 @@ const sectonCards = document.querySelector('#cards')
 
 //CARREGANDO OS CARDS 
 const listarProdutos = () => {
-
+  return produtos
    
 }
 
