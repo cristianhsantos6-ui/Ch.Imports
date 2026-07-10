@@ -44,3 +44,34 @@ const listarProdutos = () => {
 
 //CHAMANDO A FUNÇÃO listarProdutos
 listarProdutos()
+
+//MONTANDO OS MENUS SEÇÕES 
+const menuSecoes = () => {
+    const mapSecoes = new map()
+
+    produtos.forEach((elem)=>{
+        mapSecoes.set(elem.id_secao, elem)
+
+    })
+
+    const secoesFiltradas = Array.from(menuSecoes.values())
+
+    return secoesFiltradas
+}
+
+//FUNÇÃO PARA INSERIR OS MENUS NA LISTA
+const carregaSecoes = () =>{
+    const ulMenuSecao = document.querySelector('#menu-secoes')
+
+    menuSecoes().forEach((elem, i)=>{
+        const liMenu = document.childElement('a')
+        aMenu.setAttribute('href','#')
+        aMenu.setAttribute('class','link-secao')
+        aMenu.innerHTML = elem.secao
+
+        liMenu.appendChild(aMenu)
+
+        ulMenuSecoes.appendChild(liMenu)
+
+    })
+}
