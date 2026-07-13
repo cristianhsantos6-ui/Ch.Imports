@@ -40,7 +40,7 @@
 /*CONFIGURAR MENU NA HORIZONTAL*/
 #menu ul, #menu-secoes {
     display: flex;
-    gap: 30px;
+    gap: 60px;
     list-style: none;
     flex-wrap: wrap;
 }
@@ -52,7 +52,7 @@
 }
 
 /*FORMATANDO SECTION pesquisa*/
-#pesquisa {
+#secao-pesquisa {
     width: 100%;
     height: 200px;
     background-color: var(--cor01);
@@ -61,15 +61,15 @@
     align-items: center;
 }
 
-#pesquisa input {
+#secao-pesquisa input {
     width: 650px;
     height: 80px;
     background-color: var(--cor4);
     border-radius: 8px;
 }
 
-#pesquisa input::placeholder {
-    font-size: 1.3em;
+#secao-pesquisa input::placeholder {
+    font-size: 1.7em;
     font-style: italic;
     color: var(--cor03);
 }
