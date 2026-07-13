@@ -1,370 +1,158 @@
 const produtos = [
-
-    {
-        id_produto: 1,
-        valor_unitario: "249,90",
-        unidade: "peça",
-        caminho_imagem: "../imagens/5frenteloja.jpg",
-        descricao_produto: "Fachada da loja CH Imports.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 2,
-        valor_unitario: "249,90",
-        unidade: "peça",
-        caminho_imagem: "../imagens/imagem_02_interior_geral.png",
-        descricao_produto: "Ambiente interno da loja com diversos produtos.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 3,
-        valor_unitario: "249,90",
-        unidade: "peça",
-        caminho_imagem: "../imagens/imagem_03_streetwear.png",
-        descricao_produto: "Coleção de roupas no estilo streetwear.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 4,
-        valor_unitario: "249,90",
-        unidade: "peça",
-        caminho_imagem: "../imagens/imagem_04_moda_feminina.png",
-        descricao_produto: "Moda feminina com peças modernas.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 5,
-        valor_unitario: "249,90",
-        unidade: "peça",
-        caminho_imagem: "../imagens/imagem_06_estilo_boho.png",
-        descricao_produto: "Coleção inspirada no estilo boho.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 6,
-        valor_unitario: "249,90",
-        unidade: "peça",
-        caminho_imagem: "../imagens/imagem_07_moda_esportiva.png",
-        descricao_produto: "Roupas esportivas para o dia a dia.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 7,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/imagem_08_vitrine_noturna.png",
-        descricao_produto: "Vitrine iluminada com destaques da coleção.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 8,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/imagem_09_moda_kids.png",
-        descricao_produto: "Linha infantil com peças confortáveis.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 9,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/imagem_10_acessorios.png",
-        descricao_produto: "Acessórios para complementar seu estilo.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 10,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/imagem_12_moda_casual.png",
-        descricao_produto: "Moda casual para diversas ocasiões.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 11,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/imagem_13_moda_inverno.png",
-        descricao_produto: "Coleção de inverno com peças quentes.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 12,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/imagem_14_banner_promocional.png",
-        descricao_produto: "Banner com promoções especiais da loja.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 13,
-        valor_unitario: "249,90",
-          unidade: "peça",
-          unidade: "peça",
-        caminho_imagem: "../imagens/imagem_15_moda_plus_size (1).png",
-        descricao_produto: "Coleção Plus Size com muito estilo.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 14,
-        valor_unitario: "249,90",
-        unidade:  "peça",
-        caminho_imagem: "../imagens/ch_imports_camisas.png",
-        descricao_produto: "Camisas disponíveis na CH Imports.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 15,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/ch_imports_loja.png",
-        descricao_produto: "Imagem institucional da CH Imports.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 16,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/ch_imports_tenis.png",
-        descricao_produto: "Tênis modernos para diferentes estilos.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 17,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/carrinho_compras (1).png",
-        descricao_produto: "Ícone ilustrativo do carrinho de compras.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 18,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/1392234068060963301.jpg",
-        descricao_produto: "Produto em destaque da coleção.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 19,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/266af9e8-b77-4458-b24e-d9a1ce....jpg",
-        descricao_produto: "Imagem promocional da CH Imports.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-    {
-        id_produto: 20,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/5frenteloja.jpg",
-        descricao_produto: "Visão da fachada da loja.",
-        id_secao: 6,
-        secao: "Todos"
-    },
-
-    {
-        id_produto: 1,
-        valor_unitario: "249,90",
-        unidade: "peça",
-        caminho_imagem: "../imagens/5frenteloja.jpg",
-        descricao_produto: "Fachada da loja CH Imports.",
-        id_secao: 1,
-        secao: "Roupas"
-    },
-    {
-        id_produto: 2,
-        valor_unitario: "249,90",
-        unidade: "peça",
-        caminho_imagem: "../imagens/imagem_02_interior_geral.png",
-        descricao_produto: "Ambiente interno da loja com diversos produtos.",
-        id_secao: 1,
-        secao: "Roupas"
-    },
-    {
-        id_produto: 3,
-        valor_unitario: "249,90",
-        unidade: "peça",
-        caminho_imagem: "../imagens/imagem_03_streetwear.png",
-        descricao_produto: "Coleção de roupas no estilo streetwear.",
-        id_secao: 1,
-        secao: "Roupas"
-    },
-    {
-        id_produto: 4,
-        valor_unitario: "249,90",
-        unidade: "peça",
-        caminho_imagem: "../imagens/imagem_04_moda_feminina.png",
-        descricao_produto: "Moda feminina com peças modernas.",
-        id_secao: 1,
-        secao: "Roupas"
-    },
-    {
-        id_produto: 5,
-        valor_unitario: "249,90",
-        unidade: "peça",
-        caminho_imagem: "../imagens/imagem_06_estilo_boho.png",
-        descricao_produto: "Coleção inspirada no estilo boho.",
-        id_secao: 1,
-        secao: "Roupas"
-    },
-    {
-        id_produto: 6,
-        valor_unitario: "249,90",
-        unidade: "peça",
-        caminho_imagem: "../imagens/imagem_07_moda_esportiva.png",
-        descricao_produto: "Roupas esportivas para o dia a dia.",
-        id_secao: 2,
-        secao: "Conjuntos"
-    },
-    {
-        id_produto: 7,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/imagem_08_vitrine_noturna.png",
-        descricao_produto: "Vitrine iluminada com destaques da coleção.",
-        id_secao: 2,
-        secao: "Conjuntos"
-    },
-    {
-        id_produto: 8,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/imagem_09_moda_kids.png",
-        descricao_produto: "Linha infantil com peças confortáveis.",
-        id_secao: 2,
-        secao: "Conjuntos"
-    },
-    {
-        id_produto: 9,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/imagem_10_acessorios.png",
-        descricao_produto: "Acessórios para complementar seu estilo.",
-        id_secao: 2,
-        secao: "Conjuntos"
-    },
-    {
-        id_produto: 10,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/imagem_12_moda_casual.png",
-        descricao_produto: "Moda casual para diversas ocasiões.",
-        id_secao: 2,
-        secao: "Conjuntos"
-    },
-    {
-        id_produto: 11,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/imagem_13_moda_inverno.png",
-        descricao_produto: "Coleção de inverno com peças quentes.",
-        id_secao: 3,
-        secao: "Divercidade"
-    },
-    {
-        id_produto: 12,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/imagem_14_banner_promocional.png",
-        descricao_produto: "Banner com promoções especiais da loja.",
-        id_secao: 3,
-        secao: "Divercidade"
-    },
-    {
-        id_produto: 13,
-        valor_unitario: "249,90",
-          unidade: "peça",
-          unidade: "peça",
-        caminho_imagem: "../imagens/imagem_15_moda_plus_size (1).png",
-        descricao_produto: "Coleção Plus Size com muito estilo.",
-        id_secao: 3,
-        secao: "Divercidade"
-    },
-    {
-        id_produto: 14,
-        valor_unitario: "249,90",
-        unidade:  "peça",
-        caminho_imagem: "../imagens/ch_imports_camisas.png",
-        descricao_produto: "Camisas disponíveis na CH Imports.",
-        id_secao: 3,
-        secao: "Divercidade"
-    },
-    {
-        id_produto: 15,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/ch_imports_loja.png",
-        descricao_produto: "Imagem institucional da CH Imports.",
-        id_secao: 3,
-        secao: "Divercidade"
-    },
-    {
-        id_produto: 16,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/ch_imports_tenis.png",
-        descricao_produto: "Tênis modernos para diferentes estilos.",
-        id_secao: 4,
-        secao: "loja"
-    },
-    {
-        id_produto: 17,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/carrinho_compras (1).png",
-        descricao_produto: "Ícone ilustrativo do carrinho de compras.",
-        id_secao: 4,
-        secao: "loja"
-    },
-    {
-        id_produto: 18,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/1392234068060963301.jpg",
-        descricao_produto: "Produto em destaque da coleção.",
-        id_secao: 4,
-        secao: "loja"
-    },
-    {
-        id_produto: 19,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/266af9e8-b77-4458-b24e-d9a1ce....jpg",
-        descricao_produto: "Imagem promocional da CH Imports.",
-        id_secao: 4,
-        secao: "loja"
-    },
-    {
-        id_produto: 20,
-        valor_unitario: "249,90",
-          unidade: "peça",
-        caminho_imagem: "../imagens/5frenteloja.jpg",
-        descricao_produto: "Visão da fachada da loja.",
-        id_secao: 4,
-        secao: "loja"
-    },
-
-    
+  {
+    id_produto: 1,
+    descricao_produto: "Bermuda Tactel Esportiva",
+    valor_unitario: 34.90,
+    unidade: "un",
+    caminho_imagem: "imagens/bermuda_tactel_esportiva.png",
+    id_secao: 1,
+    secao: "Roupas"
+  },
+  {
+    id_produto: 2,
+    descricao_produto: "Boné Aba Curva Premium",
+    valor_unitario: 34.90,
+    unidade: "un",
+    caminho_imagem: "imagens/bone_aba_curva_premium.png",
+    id_secao: 3,
+    secao: "Acessórios"
+  },
+  {
+    id_produto: 3,
+    descricao_produto: "Calça Cargo Bege",
+    valor_unitario: 144.90,
+    unidade: "un",
+    caminho_imagem: "imagens/calca_cargo_bege.png",
+    id_secao: 1,
+    secao: "Roupas"
+  },
+  {
+    id_produto: 4,
+    descricao_produto: "Calça Jeans Slim",
+    valor_unitario: 149.90,
+    unidade: "un",
+    caminho_imagem: "imagens/calca_jeans_slim.png",
+    id_secao: 1,
+    secao: "Roupas"
+  },
+  {
+    id_produto: 5,
+    descricao_produto: "Camisa Social Algodão",
+    valor_unitario: 49.90,
+    unidade: "un",
+    caminho_imagem: "imagens/camisa_social_algodao.png",
+    id_secao: 1,
+    secao: "Roupas"
+  },
+  {
+    id_produto: 6,
+    descricao_produto: "Camisa UV Performance",
+    valor_unitario: 54.90,
+    unidade: "un",
+    caminho_imagem: "imagens/camisa_uv_performance.png",
+    id_secao: 1,
+    secao: "Roupas"
+  },
+  {
+    id_produto: 7,
+    descricao_produto: "Cinto Couro Social",
+    valor_unitario: 149.90,
+    unidade: "un",
+    caminho_imagem: "imagens/cinto_couro_social.png",
+    id_secao: 3,
+    secao: "Acessórios"
+  },
+  {
+    id_produto: 8,
+    descricao_produto: "Jaqueta Corta Vento",
+    valor_unitario: 149.90,
+    unidade: "un",
+    caminho_imagem: "imagens/jaqueta_corta_vento.png",
+    id_secao: 1,
+    secao: "Roupas"
+  },
+  {
+    id_produto: 9,
+    descricao_produto: "Mochila Urbana Tecnológica",
+    valor_unitario: 189.90, // estimado - sem preço na lista enviada
+    unidade: "un",
+    caminho_imagem: "imagens/mochila_urbana_tecnologica.png",
+    id_secao: 3,
+    secao: "Acessórios"
+  },
+  {
+    id_produto: 10,
+    descricao_produto: "Moletom Oversized Preto",
+    valor_unitario: 79.90,
+    unidade: "un",
+    caminho_imagem: "imagens/moletom_oversized_preto.png",
+    id_secao: 1,
+    secao: "Roupas"
+  },
+  {
+    id_produto: 11,
+    descricao_produto: "Óculos de Sol Aviador",
+    valor_unitario: 89.90, // estimado - sem preço na lista enviada
+    unidade: "un",
+    caminho_imagem: "imagens/oculos_sol_aviador.png",
+    id_secao: 3,
+    secao: "Acessórios"
+  },
+  {
+    id_produto: 12,
+    descricao_produto: "Relógio Minimalista Luxo",
+    valor_unitario: 320.00,
+    unidade: "un",
+    caminho_imagem: "imagens/relogio_minimalista_luxo.png",
+    id_secao: 3,
+    secao: "Acessórios"
+  },
+  {
+    id_produto: 13,
+    descricao_produto: "Tênis Casual Couro",
+    valor_unitario: 149.90,
+    unidade: "un",
+    caminho_imagem: "imagens/tenis_casual_couro.png",
+    id_secao: 2,
+    secao: "Calçados"
+  },
+  {
+    id_produto: 14,
+    descricao_produto: "Tênis Esportivo Moderno",
+    valor_unitario: 99.90,
+    unidade: "un",
+    caminho_imagem: "imagens/tenis_esportivo_moderno.png",
+    id_secao: 2,
+    secao: "Calçados"
+  },
+  {
+    id_produto: 15,
+    descricao_produto: "Tênis",
+    valor_unitario: 274.90,
+    unidade: "un",
+    caminho_imagem: "imagens/ch_imports_tenis.png",
+    id_secao: 2,
+    secao: "Calçados"
+  },
+  {
+    id_produto: 16,
+    descricao_produto: "Camisas",
+    valor_unitario: 175.00,
+    unidade: "un",
+    caminho_imagem: "imagens/ch_imports_camisas.png",
+    id_secao: 1,
+    secao: "Roupas"
+  },
+  {
+    id_produto: 17,
+    descricao_produto: "Streetwear",
+    valor_unitario: 199.90,
+    unidade: "un",
+    caminho_imagem: "imagens/imagem_03_streetwear.png",
+    id_secao: 1,
+    secao: "Roupas"
+  }
 ];
-
+ 
 export { produtos };
+ 
