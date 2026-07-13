@@ -87,7 +87,7 @@ function atualizarResumo() {
 
 }
 
-// 
+ 
 // FINALIZAR COMPRA
 // 
 document.getElementById("finalizar").addEventListener("click", () => {
@@ -111,5 +111,7 @@ document.getElementById("finalizar").addEventListener("click", () => {
     mensagem += `\nTotal: ${total.textContent}`;
 
     alert(mensagem);
+
+    
 
 });
