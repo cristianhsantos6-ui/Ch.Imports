@@ -44,8 +44,8 @@ botoesAdicionar.forEach(botao => {
 
 });
 
-// // REMOVER PRODUTO
-//
+// REMOVER PRODUTO
+
 
 const botoesRemover = document.querySelectorAll(".remover");
 
