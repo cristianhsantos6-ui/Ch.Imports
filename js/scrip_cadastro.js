@@ -11,7 +11,7 @@ formulario.addEventListener("submit", function (event) {
         email: document.getElementById("Email").value,
         dataNascimento: document.getElementById("data-nascimento").value,
         cep: document.getElementById("CEP").value,
-        logradouro: document.getElementById("logradouro").value, // Mantido o ID do seu HTML
+        logradouro: document.getElementById("logradouro").value, 
         numero: document.getElementById("numero").value,
         complemento: document.getElementById("complemento").value,
         bairro: document.getElementById("bairro").value,
@@ -52,8 +52,8 @@ formulario.addEventListener("submit", function (event) {
     // Mostra o container de dados removendo a classe que o esconde
     divDados.classList.remove("escondido");
 
-    // SE QUISER REDIRECIONAR DEPOIS DE ALGUNS SEGUNDOS, DESCOMENTE AS LINHAS ABAIXO:
-    // setTimeout(() => {
-    //     window.location.href = "login.html";
-    // }, 5000); // 5000 milissegundos = 5 segundos
+    
+     setTimeout(() => {
+        window.location.href = "login.html";
+     }, 5000); // 5000 milissegundos = 5 segundos
 });
