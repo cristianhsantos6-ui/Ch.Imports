@@ -27,7 +27,7 @@ const consultaCEP = (cep) => {
 try{
     //FAZ A COMUNICAÇÃO COM A API DO VIA CEP POR MEIO DA FUNÇÃO fetch
 
-    const resposta =  fetch(`viacep.com.br/ws/${numCep}/json/`)
+    const resposta = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
 
 
     //SE O STATUS DA RESPOSTA NÃO FOR OK. DISPARA UMA EXCEÇõ
@@ -53,6 +53,11 @@ carregaInput(dadosEndereco)
     console.log("ERRO", erro.message)
 }
 
+}
+
+//FUNÇÃO CARREGA INPUTS 
+const carregaInput = (objEndereco)=>{
+    
 }
 
 
