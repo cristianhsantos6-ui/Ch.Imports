@@ -55,8 +55,22 @@ carregaInput(dadosEndereco)
 
 }
 
+//OBJETO LITERAL DOS INPUTS
+const campos = {
+   logradoura: document.querySelector('#logradoura'),
+   bairro: document.querySelector('#bairro'),
+   complemento: document.querySelector('#complemento'),
+   uf: document.querySelector('#fuf')
+
+}
+
 //FUNÇÃO CARREGA INPUTS 
 const carregaInput = (objEndereco)=>{
+    const div
+    for(let campo in objEndereco){
+        campus [campo].value = objEndereco[campo]
+        campos[campo].disabled =  true
+    }
     
 }
 
