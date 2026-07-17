@@ -74,7 +74,7 @@ const produtos = [
   {
     id_produto: 9,
     descricao_produto: "Mochila Urbana Tecnológica",
-    valor_unitario: 189.90, // estimado - sem preço na lista enviada
+    valor_unitario: 189.90, 
     unidade: "un",
     caminho_imagem: "imagens/mochila_urbana_tecnologica.png",
     id_secao: 3,
@@ -92,7 +92,7 @@ const produtos = [
   {
     id_produto: 11,
     descricao_produto: "Óculos de Sol Aviador",
-    valor_unitario: 89.90, // estimado - sem preço na lista enviada
+    valor_unitario: 89.90, 
     unidade: "un",
     caminho_imagem: "imagens/oculos_sol_aviador.png",
     id_secao: 3,
