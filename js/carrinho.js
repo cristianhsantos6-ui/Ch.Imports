@@ -1,13 +1,13 @@
+
 // ESTADO DO CARRINHO
 
-let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+let carrinho = [];
 
 // ELEMENTOS FIXOS DA PÁGINA
 
 const elementoSubtotalGeral = document.getElementById("subtotal");
 const elementoTotalGeral = document.getElementById("total");
 const botaoFinalizar = document.getElementById("finalizar");
-const listaCarrinho = document.getElementById("itens-carrinho"); // container onde os itens serão exibidos (só existe em carrinho.html)
 
 // FUNÇÕES AUXILIARES
 
@@ -44,11 +44,6 @@ function atualizarValorItem(elementoProduto, preco, quantidade) {
     }
 }
 
-// Salva o estado atual do carrinho no localStorage
-function salvarCarrinho() {
-    localStorage.setItem("carrinho", JSON.stringify(carrinho));
-}
-
 // CARRINHO (lógica de dados)
 
 function adicionarOuAtualizarItem(nome, preco, quantidade) {
@@ -59,13 +54,10 @@ function adicionarOuAtualizarItem(nome, preco, quantidade) {
     } else {
         carrinho.push({ nome, preco, quantidade });
     }
-
-    salvarCarrinho();
 }
 
 function removerItem(nome) {
     carrinho = carrinho.filter(item => item.nome !== nome);
-    salvarCarrinho();
 }
 
 function calcularTotalGeral() {
@@ -81,49 +73,8 @@ function atualizarResumo() {
     elementoTotalGeral.textContent = formatarMoeda(totalGeral);
 }
 
-// Renderiza os itens do carrinho na página carrinho.html
-function renderizarCarrinho() {
-    if (!listaCarrinho) return; // só executa se o container existir na página
-
-    listaCarrinho.innerHTML = "";
-
-    if (carrinho.length === 0) {
-        listaCarrinho.innerHTML = "<p>Seu carrinho está vazio.</p>";
-        atualizarResumo();
-        return;
-    }
-
-    carrinho.forEach(item => {
-        const linha = document.createElement("div");
-        linha.classList.add("item-carrinho");
-
-        linha.innerHTML = `
-            <span class="nome-item">${item.nome}</span>
-            <span class="quantidade-item">${item.quantidade}x</span>
-            <span class="valor-item-carrinho">${formatarMoeda(item.preco * item.quantidade)}</span>
-            <button class="remover-item" data-nome="${item.nome}">Remover</button>
-        `;
-
-        listaCarrinho.appendChild(linha);
-    });
-
-    // eventos dos botões "remover" recém-criados
-    listaCarrinho.querySelectorAll(".remover-item").forEach(botao => {
-        botao.addEventListener("click", () => {
-            removerItem(botao.dataset.nome);
-            renderizarCarrinho();
-            atualizarResumo();
-        });
-    });
-
-    atualizarResumo();
-}
-
-// Roda a renderização assim que a página carrinho.html carrega
-renderizarCarrinho();
 
 // EVENTOS: QUANTIDADE (input em tempo real)
-// só existe nas páginas que exibem produtos (ex: index.html)
 
 document.querySelectorAll(".produto").forEach(elementoProduto => {
 
@@ -132,14 +83,13 @@ document.querySelectorAll(".produto").forEach(elementoProduto => {
     inputQuantidade.addEventListener("input", () => {
         const quantidade = validarQuantidade(inputQuantidade);
 
-
+        // Atualiza o subtotal visual do item
         atualizarValorItem(elementoProduto, preco, quantidade);
 
-
+        // Se o produto já estiver no carrinho, mantém o total geral sincronizado
         const itemExistente = carrinho.find(item => item.nome === nome);
         if (itemExistente) {
             itemExistente.quantidade = quantidade;
-            salvarCarrinho();
             atualizarResumo();
         }
     });
@@ -158,14 +108,12 @@ document.querySelectorAll(".adicionar").forEach(botao => {
         adicionarOuAtualizarItem(nome, preco, quantidade);
         atualizarValorItem(elementoProduto, preco, quantidade);
         atualizarResumo();
-
-        // redireciona para a página do carrinho
-        window.location.href = "carrinho.html";
-        // ajuste o caminho se o botão estiver em outra pasta, ex: "paginas/carrinho.html"
     });
 });
 
-// EVENTOS: REMOVER (usado dentro das páginas de produto, se existir botão remover lá)
+
+// EVENTOS: REMOVER
+
 
 document.querySelectorAll(".remover").forEach(botao => {
 
@@ -175,6 +123,7 @@ document.querySelectorAll(".remover").forEach(botao => {
 
         removerItem(nome);
 
+        // Reseta a quantidade e o subtotal visual do item removido
         inputQuantidade.value = 1;
         atualizarValorItem(elementoProduto, preco, 1);
 
@@ -202,8 +151,4 @@ botaoFinalizar.addEventListener("click", () => {
 
     alert(mensagem);
 
-    // limpa o carrinho após finalizar
-    carrinho = [];
-    salvarCarrinho();
-    renderizarCarrinho();
 });

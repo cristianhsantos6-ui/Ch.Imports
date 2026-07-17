@@ -1,6 +1,6 @@
 @import url(style_estrutura_pagina.css);
 
-/*DEFINIR AS CONFIGURAÇÕES EM TODOS ELEMENTOS CADASTRO PESSOA*/
+/* DEFINIR AS CONFIGURAÇÕES EM TODOS ELEMENTOS CADASTRO PESSOA */
 /* CONFIGURAÇÕES GERAIS */
 *{
     margin:0;
@@ -82,16 +82,54 @@
     color:#999;
 }
 
-/* FORMULÁRIO */
-#for{
-    width:700px;
-    margin:40px auto;
+/* ========================================== */
+/* MODIFICAÇÃO PRINCIPAL: CONTAINER LADO A LADO */
+/* ========================================== */
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px; /* Espaço entre o formulário e a exibição dos dados */
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* O container do formulário agora passa a ser uma caixinha flex */
+.form-area {
+    flex: 1;
+    max-width: 600px;
     background:#fff;
     border:1px solid #ddd;
     border-radius:10px;
     padding:30px;
     box-shadow:0 5px 10px rgba(0, 0, 0, 0.15);
 }
+
+/* NOVA CAIXA QUE EXIBE OS DADOS AO LADO */
+#dados-cadastrados {
+    flex: 1;
+    max-width: 500px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+#dados-cadastrados h3 {
+    color: var(--cor01);
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+/* Classe utilitária para esconder a div antes do envio */
+.escondido {
+    display: none !important;
+}
+
+/* ========================================== */
 
 #form h3{
     text-align:center;
